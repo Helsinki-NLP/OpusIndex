@@ -426,7 +426,7 @@ ${LANGUAGE_SENT_DB}:
 	${MAKE} ${LANGUAGE_DEDUP}
 	mkdir -p ${INDEX_TMPDIR}
 	if [ -e $@ ]; then rsync $@ ${INDEX_TMPDIR}/$@; fi
-	${GZIP} -cd < $< | ${SCRIPTDIR}sent2sqlite.py ${INDEX_TMPDIR}/$@
+	${GZIP} -cd < ${LANGUAGE_DEDUP} | ${SCRIPTDIR}sent2sqlite.py ${INDEX_TMPDIR}/$@
 	mv -f ${INDEX_TMPDIR}/$@ $@
 	echo "PRAGMA journal_mode=WAL" | sqlite3 $@
 
