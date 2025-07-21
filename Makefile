@@ -468,7 +468,7 @@ ${LANGUAGE_FTS_DB}: %.fts5.db: %.db
 	  fi; \
 	else \
 	  ( ${FILELOCK} 9 || exit 1; \
-	    mkdir -p $(dir ${INDEX_TMPDIR}/$@); $(dir ${LOCKFILE_DIR}/$@.lock); \
+	    mkdir -p $(dir ${INDEX_TMPDIR}/$@) $(dir ${LOCKFILE_DIR}/$@.lock); \
 	    echo "CREATE VIRTUAL TABLE IF NOT EXISTS sentences USING FTS5(sentence)" \
 	    | sqlite3 ${INDEX_TMPDIR}/$@; \
 	    echo "ATTACH DATABASE '$<' as org; \
