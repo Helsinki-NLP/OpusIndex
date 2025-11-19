@@ -5,6 +5,13 @@
 * smarter way of downloading files needed for a new language pair in the opus-explorer
 * reduce size (storing links with sentence IDs as plain text takes a lot of extra space)
 * check full-text-search across all languages (tokenization issues?)
+* check other DBMs?
+  * https://duckdb.org
+  * https://www.mongodb.com
+  * https://questdb.com
+  * https://www.postgresql.org
+  * https://mariadb.org
+  * https://couchdb.apache.org
 
 
 # errors in OPUS
