@@ -362,3 +362,8 @@ alternative: cdb (but there is a 4gb file limit - so, doesn't work for big corpo
 * https://pypi.org/project/python-cdb/
 * https://pypi.org/project/pycdb/
 * https://pypi.org/project/cdbx/ (http://opensource.perlig.de/cdbx/)
+
+
+## Acknowledgements
+
+This project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No 101070350.
